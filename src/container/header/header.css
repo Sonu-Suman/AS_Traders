@@ -1,0 +1,106 @@
+* {
+    margin: 0%;
+    padding: 0rem;
+}
+
+.main_header_tag {
+    width: 100%;
+    padding: 2rem 5rem 1rem 5rem;
+    background: aquamarine;
+    background-image: url('../../assets/traders.jpg');
+}
+
+.trader_header_logo_name {
+    /* border-style: solid;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    border-color: aqua;
+    background: #fff; */
+    margin: 0rem 0rem 1rem 3rem;
+    font-family: var(--font-family);
+}
+
+.trader_header_logo_name h1 {
+    font-size: 84px;
+    margin-left: 2rem;
+}
+
+.trader_header_logo_name p {
+    margin-top: -1.5rem;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.main_header_tag img {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.header_upper_text {
+    font-size: 20px;
+    color: aliceblue;
+    margin-bottom: 1rem;
+}
+
+.header_main_features_lists {
+    margin: 1rem 0rem 1rem 2.4rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.header_features_tag p {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: var(--font-family);
+    text-decoration: underline;
+    color: yellow;
+}
+
+.header_features_tag h4 {
+    color: white;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.header_features_lists {
+    margin-left: 2rem;
+    color: aliceblue;
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .trader_header_logo_name {
+        margin: 0rem 0rem 1rem 4.5rem;
+    }
+
+    .main_header_tag {
+        padding: 2rem;
+        background-image: url('../../assets/market-trading.png');
+    }
+
+    .header_upper_text {
+        font-size: 14px;
+        margin-bottom: 2rem;
+    }
+
+    .header_main_features_lists {
+        margin: 1rem 2rem 1rem 0rem;
+        font-size: 14px;
+        font-weight: 600;
+        color: aliceblue;
+    }
+
+    .header_features_tag p {
+        font-size: 18px;
+    }
+
+    .header_features_tag h4 {
+        font-size: 14px;
+    }
+
+    .header_features_lists {
+        font-size: 14px;
+    }
+}

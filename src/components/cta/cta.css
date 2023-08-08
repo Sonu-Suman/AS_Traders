@@ -1,0 +1,67 @@
+* {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.cta_main {
+    width: 100%;
+    /* background: linear-gradient(
+        to right bottom,
+      rgb(30, 62, 112),
+      rgb(58, 77, 128),
+      rgba(4, 82, 59, 0.877)
+    ) */
+    background: var(--color-bg);
+}
+
+
+.cta_main h1 {
+    font-size: 52px;
+    margin: 1rem 5rem 1rem 8rem;
+}
+
+.cta_main input{
+    width: 70%;
+    height: 40px;
+    margin: 1rem 1.5rem 0rem 5rem;
+    padding-left: 1rem;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: beige;
+    border-radius: 2rem;
+}
+
+.cta_main button {
+    width: 12%;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: aquamarine;
+    border-radius: 2rem;
+}
+
+
+@media screen and (max-width: 720px) {
+    .cta_main button {
+        width: 16%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .cta_main h1 {
+        font-size: 24px;
+        margin: 2rem;
+    }
+
+    .cta_main input {
+        width: 70%;
+        margin: 0rem 0.4rem 0rem 1rem;
+    }
+
+    .cta_main button {
+        width: 20%;
+        font-size: 15px;
+    }
+}
