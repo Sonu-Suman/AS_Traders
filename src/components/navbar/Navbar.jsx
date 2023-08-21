@@ -2,15 +2,17 @@ import React, { useState } from 'react'
 import './navbar.css'
 import { RiMenu3Line, RiCloseLine} from 'react-icons/ri'
 import trading from '../../assets/trading.png'
+import { Link } from "react-router-dom"
+import SignUp from '../signup/SignUp'
 
 
 const Menu = () => (
-        <>
-          <p><a href="#home">Home</a></p>
-          <p><a href="#possibility">Services</a></p>
-          <p><a href="#blog">Learn</a></p>
-          <p><a href="#features">Case studies</a></p>
-        </>
+                    <>
+                      <p><Link to="/">Home</Link></p>
+                      <p><Link to='../service/Service'>Services</Link></p>
+                      <p><Link to='/'>Learn</Link></p>
+                      <p><Link to='/'>Case studies</Link></p>
+                    </>
 )
 
 
@@ -25,15 +27,15 @@ const Navbar = () => {
           <img src={trading} alt="logo" />
         </div>
         <div className="trader__navbar-links_container">
-          <p><a href="#home">Home</a></p>
-          <p><a href="#possibility">Services</a></p>
-          <p><a href="#features">Learn</a></p>
-          <p><a href="#blog">Case studies</a></p>
+          <p><Link to="/" title='home'>Home</Link></p>
+          <p><Link to='../service/Service' title='service'>Services</Link></p>
+          <p><Link to='/'>Learn</Link></p>
+          <p><Link to='/'>Case studies</Link></p>
         </div>
       </div>
       <div className="trader__navbar-sign">
-        <p>Sign In</p>
-        <button type='button'>Sign Up</button>
+        <p><Link to={SignUp}>Sign In</Link></p>
+        <p><Link to='../signup/SignUp'>Sign Up</Link></p>
         {/* <button onClick={signUp} type='button'>Sign Up</button> */}
       </div>
       <div className="trader__navbar-menu">
@@ -47,8 +49,8 @@ const Navbar = () => {
               <Menu />
             </div>
             <div className="trader__navbar-menu_container-links-sign">
-              <p>Sign In</p>
-              <button type='button'>Sign Up</button>
+              <p><Link to={SignUp}>Sign In</Link></p>
+              <p><Link to='../signup/SignUp'>Sign Up</Link></p>
             </div>
           </div>
           )}

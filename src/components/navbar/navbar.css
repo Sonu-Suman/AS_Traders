@@ -45,8 +45,8 @@
     cursor: pointer;
 }
 
-.trader__navbar-sign button,
-.trader__navbar-menu_container button {
+.trader__navbar-sign p,
+.trader__navbar-menu_container-links-sign p {
     padding: 0.5rem 1rem;
     color: #fff;
     font-family: var(--font-family);
