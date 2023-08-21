@@ -3,17 +3,16 @@ import './navbar.css'
 import { RiMenu3Line, RiCloseLine} from 'react-icons/ri'
 import trading from '../../assets/trading.png'
 import { Link } from "react-router-dom"
-import SignUp from '../signup/SignUp'
 
 
 const Menu = () => (
-                    <>
-                      <p><Link to="/">Home</Link></p>
-                      <p><Link to='../service/Service'>Services</Link></p>
-                      <p><Link to='/'>Learn</Link></p>
-                      <p><Link to='/'>Case studies</Link></p>
-                    </>
-)
+                      <>
+                        <p><Link to="/">Home</Link></p>
+                        <p><Link to='../service/Service'>Services</Link></p>
+                        <p><Link to='/'>Learn</Link></p>
+                        <p><Link to='/'>Case studies</Link></p>
+                      </>
+                    )
 
 
 const Navbar = () => {
@@ -34,7 +33,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="trader__navbar-sign">
-        <p><Link to={SignUp}>Sign In</Link></p>
+        <p><Link to='../login/LogIn'>Sign In</Link></p>
         <p><Link to='../signup/SignUp'>Sign Up</Link></p>
         {/* <button onClick={signUp} type='button'>Sign Up</button> */}
       </div>
@@ -49,7 +48,7 @@ const Navbar = () => {
               <Menu />
             </div>
             <div className="trader__navbar-menu_container-links-sign">
-              <p><Link to={SignUp}>Sign In</Link></p>
+              <p><Link to='../login/LogIn'>Sign In</Link></p>
               <p><Link to='../signup/SignUp'>Sign Up</Link></p>
             </div>
           </div>

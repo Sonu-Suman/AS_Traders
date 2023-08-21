@@ -1,9 +1,9 @@
 * {
-    margin: 0%;
-    padding: 0rem;
+    margin: 0;
+    padding: 0;
 }
 
-.signup-form {
+.login-form {
     display: flex;
     margin: 1rem;
     padding-top: 2rem;
@@ -17,53 +17,34 @@
     );
 }
 
-.signup-form-inner {
+.login-form-inner {
     position: relative;
     margin: 2rem;
     display: flex;
     flex-direction: row;
 }
 
-.signup-form-inner h1 {
+.login-form-inner h1 {
     color: #fff;
     font-size: 100px;
-    margin-top: 6rem;
-    margin-right: 2rem;
+    margin-top: 1.5rem;
+    margin-right: 4rem;
     font-family: var(--font-family);
 }
 
-.signup-form-inner-labels {
+.login-form-inner-labels {
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
 }
 
-.signup-form-inner-input {
+.login-form-inner-inputs {
     display: flex;
     flex-direction: column;
 }
 
-label{  
-    color: white;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-    font-size: 20px;
-    margin-right: 2rem;
-    font-weight: 600;
-}
 
-input {
-    margin-bottom: 2rem;
-    border-radius: 2rem;
-    height: 40px;
-    width: 400px;
-    font-size: 20px;
-    padding-left: 1rem;
-    font-weight: 600;
-}
-
-
-.signup-form-inner-input button {
+.login-form-inner-inputs button {
     width: 10rem;
     padding: 1rem;
     border-radius: 2rem;
@@ -74,7 +55,7 @@ input {
     cursor: pointer;
 }
 
-.signup-form-inner-input-login {
+.login-form-inner-input-signup {
     margin-top: 1rem;
     color: white;
     text-decoration: underline;

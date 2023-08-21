@@ -1,5 +1,7 @@
 import React from 'react'
 import './signup.css'
+import { Link } from "react-router-dom"
+
 
 const SignUp = () => {
 
@@ -25,6 +27,9 @@ const SignUp = () => {
             <input type='password' name='Password' />
             <input type='password' name='Password' />
             <button onClick={signUp}>Sign Up</button>
+            <Link className='signup-form-inner-input-login' to='../login/Login'>You have an already Sign Up
+              <span role='img' aria-label='go to login page'>👈👈</span>
+            </Link>
           </div>
         </div>
       </div>
@@ -32,4 +37,3 @@ const SignUp = () => {
 }
 
 export default SignUp
-
